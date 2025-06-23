@@ -11,10 +11,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- <nav id="desktop-nav">
+      <div class="logo">Creugo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Creugo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav> -->
     <nav class="navbar align_center">
       <div class="navbar-left align_center">
+        <img
+          src="assets/logo.png"
+          alt="Creugo Logo"
+          class="navbar-logo"
+        />
         <h1 class="navbar_heading">Creugo</h1>
       </div>
+
       <div class="navbar-right align_center">
         <a href="#services" class="nav_link">Services</a>
         <a href="#vision" class="nav_link">Our Vision</a>
@@ -34,62 +67,94 @@
       </div>
     </header>
 
-    <section id="problem">
+    <section id="problem" class="info-section">
       <h2>The Problem</h2>
       <p>
-        Finding reliable plumbers, electricians, or technicians at the right
-        time is often difficult. There's no unified platform that guarantees
-        quick, verified, and quality services right when you need them.
+        Finding skilled and trustworthy home service professionals can be
+        frustrating. Whether it's an urgent plumbing issue, electrical fix, or
+        appliance repair, most people struggle with late arrivals, unclear
+        pricing, and unverified technicians.
       </p>
     </section>
 
-    <section id="solution">
+    <section id="solution" class="info-section">
       <h2>Our Solution</h2>
       <p>
-        Creugo connects users with verified and skilled professionals for a
-        variety of home services — from fixing a leaky tap to installing an RO
-        system. We ensure fast response, transparent pricing, and quality
-        workmanship.
+        Creugo offers a seamless platform to book certified professionals for a
+        variety of home services — all at your fingertips. We match users with
+        vetted technicians in real-time, ensuring fast service, upfront pricing,
+        and dependable quality across plumbing, electrical, AC repair, and more.
       </p>
     </section>
 
-    <section id="vision">
+    <section id="vision" class="info-section">
       <h2>Our Vision</h2>
       <p>
-        We aim to become the go-to platform for all home-related services in
-        every Indian city — simplifying lives, empowering local technicians, and
-        building trust one service at a time.
+        At Creugo, we envision a world where home maintenance is stress-free and
+        reliable for every Indian household. By empowering local technicians
+        with technology and trust, we aim to create a one-stop solution for
+        every home service need — across every city, town, and neighborhood.
       </p>
     </section>
 
     <section id="services">
-      <h2>Our Services</h2>
-      <div class="services">
-        <div class="service-card">
-          <h3>Plumbing</h3>
-          <p>Leak repairs, tap installations, bathroom fittings and more.</p>
-        </div>
-        <div class="service-card">
-          <h3>Electrician</h3>
-          <p>Fan, light installations, wiring issues, and emergency repairs.</p>
-        </div>
-        <div class="service-card">
-          <h3>AC Repair</h3>
-          <p>Cooling issues, gas refilling, filter cleaning, full service.</p>
-        </div>
-        <div class="service-card">
-          <h3>RO Installation & Repair</h3>
-          <p>RO system setup, maintenance, and filter replacement.</p>
+      <div class="main">
+        <div class="container">
+          <div class="title">Our Services</div>
+          <div class="service-container">
+            <div class="services">
+              <div class="loop">
+                <div class="image">
+                  <img src="assets/plumber.jpeg" alt="Plumbing" />
+                </div>
+                <div class="service-name">Plumber</div>
+              </div>
+              <div class="loop">
+                <div class="image">
+                  <img src="assets/electrician.webp" alt="Electrician" />
+                </div>
+                <div class="service-name">Electrician</div>
+              </div>
+              <div class="loop">
+                <div class="image">
+                  <img src="assets/ac_repair.jpg" alt="AC Repair" />
+                </div>
+                <div class="service-name">AC Repair</div>
+              </div>
+              <div class="loop">
+                <div class="image">
+                  <img src="assets/carpenter.jpg" alt="RO Installation" />
+                </div>
+                <div class="service-name">Furniture Repair</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have a service request or a question? Reach out to us!</p>
-      <p>Email: <a href="mailto:support@creugo.in">support@creugo.in</a></p>
-      <p>Phone: +91-9876543210</p>
-      <p>Location: Chandigarh, India</p>
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p class="contact-subtext">
+          Have a service request or a question? We're here to help!
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:support@creugo.in">support@creugo.in</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>Phone</h3>
+            <p>+91-6283983373</p>
+          </div>
+          <div class="contact-card">
+            <h3>Location</h3>
+            <p>Chandigarh, India</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
